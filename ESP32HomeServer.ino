@@ -1,7 +1,7 @@
 /*
   ESP32 SD Webserver with upload, file manager, download, delete, and mDNS.
   - Connects to WiFi (replace SSID/PASS).
-  - mDNS name: http://hunterhome.local/
+  - mDNS name: http://homeserver.local/
   - Upload files: /upload
   - File manager: /files  (list / download / delete)
   - Serves files from SD card root.
