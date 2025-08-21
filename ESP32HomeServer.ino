@@ -14,8 +14,8 @@
 #include <SD.h>
 #include <SPI.h>
 
-const char* ssid     = "Home";
-const char* password = "HOME2023";
+const char* ssid     = "YOUR_HOME_WIFI_SSID";
+const char* password = "WIFI_PASSOWRD";
 
 WebServer server(80);
 
