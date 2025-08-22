@@ -9,7 +9,7 @@ You can upload, view, download, and delete files from the SD card via the web in
 - ESP32 creates a webserver accessible over WiFi.
 - Connects automatically to your **home WiFi** (edit SSID & password in code).
 - Supports **mDNS** → access your ESP32 at:  
-  👉 `http://hunterhome.local`
+  👉 `http://homeserver.local`
 - MicroSD card support for serving static files (HTML, CSS, JS, images, etc.).
 - Built-in **file manager**:
   - List files stored on SD card
@@ -59,24 +59,29 @@ You can upload, view, download, and delete files from the SD card via the web in
 ## 🚀 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ESP32-WebServer-SD.git
+   git clone https://github.com/huntersourasis/ESP32-HomeServer.git
    ```
 2. Open `ESP32_SD_WebServer.ino` in Arduino IDE or PlatformIO.
 3. Update your WiFi **SSID** and **password** in the code:
    ```cpp
    const char* ssid = "YOUR_WIFI_SSID";
-   const char* password = "YOUR_WIFI_PASSWORD";
+   const char* password = "PASSWORD";
    ```
 4. Upload the code to your ESP32.
 5. Insert formatted microSD card into the SD module.
-6. Connect to `http://hunterhome.local` in your browser.
+6. Connect to `http://homeserver.local` in your browser.
+7. You can also access it by connecting to it :
+   ```bash
+      SSID = ESP32-FTP
+      PASSWORD = "12345678"
+   ```
 
 ---
 
 ## 🌐 Access Points
-- `http://hunterhome.local/` → Serves `index.html` from SD card
-- `http://hunterhome.local/upload` → Upload files
-- `http://hunterhome.local/files` → File manager (list, download, delete)
+- `http://homeserver.local/` → Serves `index.html` from SD card
+- `http://homeserver.local/upload` → Upload files
+- `http://homeserver.local/files` → File manager (list, download, delete)
 
 ---
 
