@@ -25,7 +25,7 @@ const char* STA_PASS = "PASSWORD";
 const char* AP_SSID  = "ESP32-FTP"; // ESP32 hotspot
 const char* AP_PASS  = "12345678";     // 8+ chars
 
-const char* MDNS_NAME = "esp32server"; // http://esp32server.local/
+const char* MDNS_NAME = "homeserver"; // http://homeserver.local/
 
 // SD card CS pin (adjust if needed)
 #define SD_CS 5
